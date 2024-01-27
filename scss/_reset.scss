@@ -15,9 +15,19 @@ img {
   display: block;
 }
 
+html {
+  font-size: 62.5%; // 1rem = 10px
+  @include responsive(1300px) {
+    font-size: 58%;
+  }
+
+  @include responsive(991px) {
+    font-size: 62.5%;
+  }
+}
+
 html,
 body {
-  font-size: 62.5%; // 1rem = 10px
   overflow-x: hidden;
 }
 
