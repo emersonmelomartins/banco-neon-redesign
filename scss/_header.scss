@@ -36,5 +36,77 @@ header {
         }
       }
     }
+
+    .btn-mobile {
+      display: none;
+      margin-left: 1rem;
+
+      .hamburger {
+        padding: 0;
+      }
+
+      .hamburger-box {
+        .hamburger-inner {
+          background-color: #fff;
+
+          &::after,
+          &::before {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(1080px) {
+    nav {
+      ul {
+        margin-right: 3rem;
+        gap: 2.5rem;
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    .logo {
+      max-width: 10.8rem;
+    }
+
+    nav {
+      ul {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: $brand-light-blue;
+        width: 100%;
+        height: calc(100% - 8.8rem);
+        flex-direction: column;
+        z-index: 3;
+        padding: 4rem 1.5rem;
+        transform: translateY(100%);
+        opacity: 0;
+
+        transition: all 0.3s;
+
+        &.is-opened {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+      }
+
+      .btn-mobile {
+        display: block;
+      }
+    }
+  }
+
+  @include responsive(480px) {
+    height: 7.7rem;
+
+    nav {
+      .btn-secondary {
+        display: none;
+      }
+    }
   }
 }

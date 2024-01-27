@@ -6,3 +6,11 @@ var swiper = new Swiper(".slide-depoimentos", {
     clickable: true,
   },
 });
+
+const btnMenuMobile = document.getElementById("js-btn-menu");
+const menuList = document.getElementById("menu-list");
+
+btnMenuMobile.addEventListener("click", function () {
+  btnMenuMobile.classList.toggle("is-active");
+  menuList.classList.toggle("is-opened");
+});
