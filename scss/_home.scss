@@ -474,6 +474,222 @@
       margin-right: -3.1rem;
     }
   }
+
+  @include responsive(1200px) {
+    .left-area {
+      .ilustra-mockup {
+        .circle {
+          display: none;
+        }
+      }
+    }
+
+    .right-area {
+      max-width: 73rem;
+
+      .main-text {
+        ul {
+          li {
+            .info {
+              .text {
+                margin-left: 2rem;
+              }
+            }
+          }
+        }
+      }
+
+      .box-card {
+        padding-left: 3.5rem;
+        .image {
+          margin-right: -1rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .right-area {
+      max-width: 100%;
+      margin-bottom: 9.8rem;
+
+      .main-text {
+        margin-bottom: 5.7rem;
+
+        h2 {
+          text-align: center;
+          font-size: 3.6rem;
+          margin: 0 auto;
+          margin-bottom: 5.3rem;
+        }
+
+        .btn {
+          display: block;
+          text-align: center;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .box-card {
+        max-width: 94.7%;
+
+        .image {
+          margin-right: -4rem;
+        }
+      }
+    }
+
+    .left-area {
+      @include flex(row, center, space-between);
+      max-width: 61rem;
+      margin: 0 auto;
+
+      .ilustra-mockup {
+        max-width: 25.5rem;
+        margin-bottom: 0;
+      }
+
+      .text {
+        max-width: 27rem;
+      }
+    }
+  }
+
+  @include responsive(640px) {
+    padding-top: 16.9rem;
+
+    .right-area {
+      .box-card {
+        max-width: 100%;
+        height: 47rem;
+        background-size: cover;
+        flex-direction: column;
+        padding-top: 4.3rem;
+        padding-left: 0;
+        margin-bottom: 4rem;
+
+        .image {
+          margin-right: 0;
+        }
+
+        .text {
+          max-width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @include responsive(480px) {
+    padding-top: 8.6rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 21.4rem;
+      background: linear-gradient(
+        180deg,
+        #f7f7fa 0%,
+        rgba(247, 247, 250, 0) 100%
+      );
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .right-area {
+      margin-bottom: 6.7rem;
+
+      .main-text {
+        h2 {
+          font-size: 2.8rem;
+          margin-bottom: 3.7rem;
+        }
+
+        ul {
+          li {
+            padding: 2.8rem 0;
+
+            .info {
+              align-items: flex-start;
+
+              .text {
+                max-width: 71%;
+                h3 {
+                  font-size: 2rem;
+                }
+
+                p {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .box-card {
+        h2 {
+          font-size: 2.8rem;
+          font-weight: 600;
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        .text {
+          p {
+            max-width: 25.3rem;
+            margin-bottom: 3.4rem;
+          }
+
+          .btns {
+            .btn-primary {
+              padding: 0 3rem;
+            }
+          }
+        }
+
+        .image {
+          max-width: 27.7rem;
+        }
+      }
+    }
+
+    .left-area {
+      flex-direction: column-reverse;
+
+      .ilustra-mockup {
+        height: 39.7rem;
+        overflow: hidden;
+      }
+
+      .text {
+        margin-bottom: 4rem;
+
+        .icon {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-depoimentos {
