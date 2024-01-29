@@ -46,6 +46,7 @@
     />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/hamburgers.css" />
     <link rel="stylesheet" href="css/main.min.css" />
 
@@ -89,7 +90,7 @@
 
     <section class="s-hero">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h3>Abra sua conta, é só baixar o app!</h3>
           <h1>A conta digital certa pra cuidar bem do seu dinheiro</h1>
           <button type="button" class="btn-primary">
@@ -134,8 +135,8 @@
         </div>
 
         <div class="area-image">
-          <h2>Banco 100% digital</h2>
-          <div class="image">
+          <h2 data-aos="fade-left">Banco 100% digital</h2>
+          <div class="image" data-aos="zoom-in">
             <img
               src="imgs/card-neon-frnt.png"
               class="card-front"
@@ -160,15 +161,16 @@
       <div class="container">
         <div class="left-area">
           <div class="ilustra-mockup">
-            <img src="imgs/circle-mockup.svg" class="circle" alt="Circulo" />
+            <img src="imgs/circle-mockup.svg" class="circle" data-aos="fade-left" alt="Circulo" />
             <img
               src="imgs/mockup.svg"
               class="mockup"
               alt="Smartphone com varias opções"
+              data-aos="flip-right"
             />
           </div>
 
-          <div class="text">
+          <div class="text" data-aos="fade-up">
             <div class="icon">
               <img src="imgs/icon-neon.svg" alt="Icone de aplicativo Neon" />
             </div>
@@ -197,7 +199,7 @@
         </div>
 
         <div class="right-area">
-          <div class="main-text">
+          <div class="main-text" data-aos="fade-left">
             <h2>Resolva sua vida direto pelo app Neon!</h2>
 
             <ul>
@@ -264,7 +266,7 @@
             <a href="#" class="btn">Conheça outros produtos</a>
           </div>
 
-          <div class="box-card">
+          <div class="box-card" data-aos="fade-left">
             <div class="text">
               <h2>Neon Pejota</h2>
               <h3>Contas digitais PJ gratuitas para decolar seu negócio!</h3>
@@ -287,7 +289,7 @@
 
     <section class="s-depoimentos">
       <div class="container">
-        <div class="top">
+        <div class="top" data-aos="fade-left">
           <h2>
             <span>Prático, fácil, moderno</span>
             Você resolve tudo sem estresse 😊
@@ -295,7 +297,7 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <div class="slide-depoimentos">
+        <div class="slide-depoimentos" data-aos="fade-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card-testimony">
@@ -376,7 +378,7 @@
 
     <section class="s-conta-digital">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h2>
             <span>Aproveite</span> Domine o seu dinheiro com uma conta 100%
             digital
@@ -428,16 +430,19 @@
             src="imgs/mockup-01.svg"
             class="mockup-01"
             alt="Smartphone mostrando comprovante"
+            data-aos="fade-up"
           />
           <img
             src="imgs/mockup-02.png"
             class="mockup-02"
             alt="Smartphone mostrando tela de cadastro de aplicativo"
+            data-aos="fade-down"
           />
           <img
             src="imgs/circle-conta-digital.svg"
             class="circle"
             alt="Circulo com degradê"
+            data-aos="zoom-in"
           />
         </div>
       </div>
@@ -594,6 +599,7 @@
     </footer>
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

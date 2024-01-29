@@ -28,3 +28,8 @@ btnMenuMobile.addEventListener("click", function () {
   btnMenuMobile.classList.toggle("is-active");
   menuList.classList.toggle("is-opened");
 });
+
+AOS.init({
+  duration: 1000,
+  once: true,
+});
