@@ -16,7 +16,7 @@
     />
 
     <!-- Primary Meta Tags -->
-    <title>Redesign Landing Page NEON</title>
+    <title><?php bloginfo("name") ?> <?php wp_title("-") ?></title>
     <meta name="title" content="Redesign Landing Page NEON" />
     <meta
       name="description"
