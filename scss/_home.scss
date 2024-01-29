@@ -164,6 +164,7 @@
 
     .text {
       @include flex(column, center, center);
+      margin: 0 auto;
       margin-bottom: 5rem;
       max-width: 68.5rem;
 
@@ -538,7 +539,7 @@
       }
 
       .box-card {
-        max-width: 94.7%;
+        max-width: 90%;
 
         .image {
           margin-right: -4rem;
