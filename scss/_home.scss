@@ -84,12 +84,14 @@
       }
 
       .card-front {
+        animation: floating 6s infinite;
         top: 4.1rem;
         left: 0;
         z-index: 2;
         max-width: 43.5rem;
       }
       .card-back {
+        animation: floating 8s infinite;
         right: 8.6rem;
         bottom: 4.6rem;
         z-index: 1;
@@ -971,5 +973,19 @@
         top: 0;
       }
     }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-15px);
+
+  }
+  100% {
+    transform: translateY(0);
+
   }
 }
