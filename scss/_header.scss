@@ -106,6 +106,10 @@ header {
       .btn-secondary {
         display: none;
       }
+
+      ul {
+        height: calc(100% - 7.7rem);
+      }
     }
   }
 }
